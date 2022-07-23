@@ -1,7 +1,6 @@
 {
   "name": "react-storybook-library",
   "version": "1.0.0",
-  "private": true,
   "type": "commonjs",
   "main": "./dist/my-lib.umd.cjs",
   "module": "./dist/my-lib.js",
