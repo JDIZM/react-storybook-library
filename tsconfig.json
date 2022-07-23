@@ -5,24 +5,24 @@
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
     "skipLibCheck": true,
-    "esModuleInterop": false,
+    // "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
     "baseUrl": "./",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"]
     },
     // added additional storybook config below
     "declaration": true,
     "emitDeclarationOnly": true,
     "outDir": "dist",
-    // "esModuleInterop": true,
+    "esModuleInterop": true,
     "declarationDir": "dist/types",
     "sourceMap": true
   },
