@@ -5,11 +5,17 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 export default {
   title: "Example/List",
   component: List,
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     backgroundColor: { control: "color" },
   },
 } as ComponentMeta<typeof List>;
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof List> = (args) => <List {...args} />;
+
+export const Primary: ComponentStory<typeof List> = Template.bind({});
+Primary.args = {
+  children: [
+    <li key={1}>hello i'm a child</li>,
+    <li key={2}>hello i'm a child</li>,
+  ],
+};

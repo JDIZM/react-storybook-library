@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "./Button";
+import { Button } from "@/components";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
@@ -24,6 +24,7 @@ Primary.args = {
 
 export const Secondary: ComponentStory<typeof Button> = Template.bind({});
 Secondary.args = {
+  backgroundColor: "orangered", // union types
   label: "Button",
 };
 

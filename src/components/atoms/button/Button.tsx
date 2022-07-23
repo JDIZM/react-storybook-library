@@ -1,6 +1,7 @@
 import React from "react";
 import "./button.css";
 
+// we dont need to export a type; we do with interfaces
 export interface ButtonProps {
   primary: boolean;
   backgroundColor: React.CSSProperties["backgroundColor"] | undefined;
@@ -43,3 +44,5 @@ Button.defaultProps = {
   size: "medium",
   onClick: undefined,
 };
+
+export default Button;
