@@ -7,7 +7,9 @@ export interface ButtonProps {
   backgroundColor: React.CSSProperties["backgroundColor"] | undefined;
   size: string;
   label: string;
-  onClick: () => void | undefined;
+  onClick: (
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) => void | undefined;
 }
 
 /**
@@ -31,6 +33,7 @@ export const Button: React.FC<ButtonProps> = ({
         " "
       )}
       style={backgroundColor && { backgroundColor }}
+      onClick={onClick}
       {...props}
     >
       {label}
